@@ -1,0 +1,245 @@
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Barre de navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: black;
+            padding: 15px 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between; /* logo à gauche, menu à droite */
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        /* Logo */
+        .logo {
+            color: #2ec4b6;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Menu */
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            margin-left: 30px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #2ec4b6; /* orange au survol */
+        }
+
+        /* Section Home */
+#home {
+    background-color: #121212; /* noir profond */
+    height: 100vh; /* prend tout l'écran */
+    display: flex;
+    justify-content: center; /* horizontal centré */
+    align-items: center;     /* vertical centré */
+    position: relative;
+    overflow: hidden;
+}
+
+.home-content {
+    text-align: center;
+}
+
+/* Nom */
+.name {
+    color: #2ec4b6; /* vert menthe */
+    font-size: 50px; /* très grand */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* Mot de bienvenue / slogan */
+.welcome {
+    color: #ffffff;
+    font-size: 28px;
+    font-style: italic;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeIn 2s forwards 1s; /* fade-in avec délai de 1s */
+}
+
+/* Animation fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Section À propos */
+#about {
+  background-color: #F5F5F5;
+  padding: 60px 20px;
+  margin-top: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Photo */
+.about-photo {
+  min-width: 250px;
+  text-align: left;
+}
+
+.about-photo img {
+  width: 250px;
+  height: 350px;
+  border-radius: 15%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Texte */
+.about-text {
+  flex: 2;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  color: #121212; /* Accent coloré */
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.about-text p {
+  color: #121212;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Centres d'intérêt */
+.about-interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 90px;
+}
+
+.about-interests span {
+  background-color: #2ec4b6;
+  color: #FFFFFF;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    min-width: 100%;
+  }
+}
+
+/* PASSION*/
+
+
+#passion {
+  padding: 80px 10%;
+  background-color: #ffffff;
+}
+
+#passion h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+#passion p {
+  text-align: center;
+}
+.passion-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.passion-block {
+  background-color: #2ec4b6;
+  color: #fff;
+  padding: 30px;
+  width: 280px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.passion-block:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.info-btn {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #2ec4b6;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.info-btn:hover {
+  background-color: #2ec4b6;
+  color: #fff;
+}
+
+footer {
+  background-color: #111; /* fond sombre */
+  color: #fff;
+  padding: 30px 10%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer a {
+  color: #2ec4b6; /* vert turquoise pour rappeler le site */
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ffffff;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Sarra</title>
+    <link rel="stylesheet" href="style.css">   
+</head>
+
+<body>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">À propos de moi</a></li>
+                <li><a href="#passion">Ma passion</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+   <section id="home">
+    <div class="home-content">
+        <h1 class="name">SIEHI SIKLENIN SARRA</h1>
+        <p class="welcome">Bienvenue sur mon portfolio</p>
+    </div>
+</section>
+
+
+<!-- Section À propos de moi -->
+<section id="about">
+  <div class="about-container">
+
+    <div class="about-photo">
+      <img src="image1.png" alt="Sarra">
+    </div>
+
+
+    <div class="about-text">
+      <h2>SARRA SIEHI</h2>
+      <p>
+Titulaire d'une licence en réseau et sécurité informatique, j’ai acquis des compétences solides en administration et gestion de réseaux. <br>
+Aujourd’hui, je me réoriente vers le développement IA et Data, animée par la volonté d’élargir mes horizons et d’acquérir de nouvelles compétences. </p>
+
+      <div class="about-interests">
+        <span>Slam</span>
+        <span>Lecture</span>
+        <span>musique</span>
+        <span>Formation & apprentissage</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="passion">
+  <h2>Ma passion</h2>
+  <p class="intro">Ce qui me motive chaque jour dans le numérique.</p>
+
+  <div class="passion-container">
+    <div class="passion-block" data-original="Explorer et utiliser les technologies modernes." data-message="J’aime tester de nouveaux outils et solutions pour rester à jour et éfficace.">
+      <h3>Technologie</h3>
+      <p class="block-text">Explorer et utiliser les technologies modernes.</p>
+      <button class="info-btn">En savoir plus</button>
+    </div>
+
+    <div class="passion-block" data-original="Comprendre les failles pour mieux protéger les systèmes." data-message="La cybersécurité me passionne car elle protège les utilisateurs et les données.">
+      <h3>Sécurité</h3>
+      <p class="block-text">Comprendre les failles pour mieux protéger les systèmes.</p>
+      <button class="info-btn">En savoir plus</button>
+    </div>
+
+    <div class="passion-block" data-original="Évoluer en continu dans un domaine qui ne dort jamais." data-message="J’aime découvrir de nouvelles technologies et relever des défis chaque jour.">
+      <h3>Apprentissage</h3>
+      <p class="block-text">Évoluer en continu dans un domaine qui ne dort jamais.</p>
+      <button class="info-btn">En savoir plus</button>
+    </div>
+  </div>
+</section>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll('.info-btn');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const block = button.parentElement;
+      const textElem = block.querySelector('.block-text');
+      
+      // récupérer les textes
+      const original = block.getAttribute('data-original');
+      const message = block.getAttribute('data-message');
+
+      // bascule texte
+      if (textElem.textContent === original) {
+        textElem.textContent = message;
+      } else {
+        textElem.textContent = original;
+      }
+    });
+  });
+});
+</script>
+
+</body>
+
+<footer>
+  <div class="footer-container">
+    <p>&copy; 2026 Sarra. Tous droits réservés.</p>
+    <div class="reseaux">
+      <a href="#" onclick="return false;">LinkedIn</a> |
+      <a href="#" onclick="return false;">GitHub</a> |
+      <a href="#" onclick="return false;">Twitter</a>
+      <p> sarrasiehi@gmail.com   0574611238</p> 
+      
+    </div>
+  </div>
+</footer>
+
+</html>
