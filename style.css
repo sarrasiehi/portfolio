@@ -18,7 +18,7 @@ body {
             max-width: 1100px;
             margin: 0 auto;
             display: flex;
-            justify-content: space-between; /* logo à gauche, menu à droite */
+            justify-content: space-between; 
             align-items: center;
             padding: 0 20px;
         }
@@ -51,16 +51,16 @@ body {
         }
 
         .navbar a:hover {
-            color: #2ec4b6; /* orange au survol */
+            color: #2ec4b6; 
         }
 
         /* Section Home */
 #home {
-    background-color: #121212; /* noir profond */
-    height: 100vh; /* prend tout l'écran */
+    background-color: #121212; 
+    height: 100vh; 
     display: flex;
-    justify-content: center; /* horizontal centré */
-    align-items: center;     /* vertical centré */
+    justify-content: center; 
+    align-items: center;     
     position: relative;
     overflow: hidden;
 }
@@ -69,22 +69,22 @@ body {
     text-align: center;
 }
 
-/* Nom */
+
 .name {
-    color: #2ec4b6; /* vert menthe */
-    font-size: 50px; /* très grand */
+    color: #2ec4b6; 
+    font-size: 50px; 
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
-/* Mot de bienvenue / slogan */
-.welcome {
+
+.bienvenue {
     color: #ffffff;
     font-size: 28px;
     font-style: italic;
     margin-top: 10px;
     opacity: 0;
-    animation: fadeIn 2s forwards 1s; /* fade-in avec délai de 1s */
+    animation: fadeIn 2s forwards 1s; 
 }
 
 /* Animation fade-in */
@@ -110,7 +110,7 @@ body {
   gap: 40px;
 }
 
-/* Photo */
+
 .about-photo {
   min-width: 250px;
   text-align: left;
@@ -124,14 +124,14 @@ body {
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* Texte */
+
 .about-text {
   flex: 2;
   min-width: 300px;
 }
 
 .about-text h2 {
-  color: #121212; /* Accent coloré */
+  color: #121212; 
   font-size: 2.5rem;
   margin-bottom: 50px;
 }
@@ -226,7 +226,7 @@ body {
 }
 
 footer {
-  background-color: #111; /* fond sombre */
+  background-color: #111; 
   color: #fff;
   padding: 30px 10%;
   text-align: center;
@@ -234,7 +234,7 @@ footer {
 }
 
 footer a {
-  color: #2ec4b6; /* vert turquoise pour rappeler le site */
+  color: #2ec4b6; 
   text-decoration: none;
   margin: 0 8px;
   transition: color 0.3s;
